@@ -21,7 +21,7 @@ class User:
     Pincode: int
 
     @staticmethod
-    def from_dict(obj: Any) -> 'Root':
+    def from_dict(obj: Any) -> 'User':
         _FirstName = str(obj.get("FirstName"))
         _LastName = str(obj.get("LastName"))
         _UserName = str(obj.get("UserName"))
@@ -38,7 +38,7 @@ class User:
         _state = str(obj.get("state"))
         _country = str(obj.get("country"))
         _Pincode = int(obj.get("Pincode"))
-        return Root(_FirstName, _LastName, _UserName, _EmailId, _MobileNo, _isActive, _OrgId, _UserId, _RoleId, _AuthStatus, _Address1, _Address2, _City, _state, _country, _Pincode)
+        return User(_FirstName, _LastName, _UserName, _EmailId, _MobileNo, _isActive, _OrgId, _UserId, _RoleId, _AuthStatus, _Address1, _Address2, _City, _state, _country, _Pincode)
 
 # Example Usage
 # jsonstring = json.loads(myjsonstring)
