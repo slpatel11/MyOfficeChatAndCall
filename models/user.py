@@ -2,7 +2,7 @@ from typing import Any
 from dataclasses import dataclass
 import json
 @dataclass
-class Root:
+class User:
     FirstName: str
     LastName: str
     UserName: str
